@@ -12,15 +12,15 @@ Ext.application({
         // so that application classes do not need to require each other.
         'NPKS.*'
     ],
-    // launch : function () {
-    //   viewport = Ext.getCmp('viewport');
-    //   target = viewport.down('#viewport-target');
-    //   view = Ext.create('NPKS.view.Extra');
-    //   target.add(view);
-    // },
+    launch : function () {
+      viewport = Ext.getCmp('viewport');
+      target = viewport.down('#viewport-target');
+      view = Ext.create('NPKS.view.Extra');
+      target.add(view);
+    },
 
     // The name of the initial view to create.
     // mainView: 'NPKS.view.main.Main',
-    mainView: 'NPKS.view.Search',
-    // autoCreateViewport : true, // menampilkan viewport.js di folder classic
+    // mainView: 'NPKS.view.Search', // untuk submit form data
+    autoCreateViewport : true, // menampilkan viewport.js di folder classic
 });

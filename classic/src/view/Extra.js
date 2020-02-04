@@ -8,6 +8,7 @@ Ext.define('NPKS.view.Extra', {
   store : {
     type : 'extraApi'
   },
+  plugins: 'gridfilters', // untuk filter
   columns : [
     // {text : 'No. Container', dataIndex : 'no_cont', flex : 1},
     // {text : 'Size', dataIndex : 'size', flex : 1},
@@ -16,7 +17,11 @@ Ext.define('NPKS.view.Extra', {
     // {text : 'Weight', dataIndex : 'weight', flex : 1},
     // {text : 'ISO', dataIndex : 'iso', flex : 1}
 
-    {text : 'Name', dataIndex : 'name', flex : 1},
+    {text : 'Name', dataIndex : 'name', flex : 1,
+      filter: {
+        type: 'string'
+      }
+  },
     {text : 'Username', dataIndex : 'username', flex : 1},
     {text : 'Email', dataIndex : 'email', flex : 1},
     {text : 'Phone', dataIndex : 'phone', flex : 1},
