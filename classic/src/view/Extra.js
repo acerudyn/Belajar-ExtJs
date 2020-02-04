@@ -57,6 +57,14 @@ Ext.define('NPKS.view.Extra', {
         var data = Ext.getCmp('testGrid').getSelectionModel().getSelection();
         console.warn('data', data);
       }
+    },
+    {
+      text: 'Show popup',
+      handler: function(){
+        popup = Ext.create('NPKS.view.Popup');  // untuk memanggil popup yg sudah dibuat
+        popup.show();
+        console.warn('test popup');
+      }
     }
   ]
 
