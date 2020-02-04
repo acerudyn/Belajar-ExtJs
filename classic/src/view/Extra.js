@@ -9,6 +9,10 @@ Ext.define('NPKS.view.Extra', {
     type : 'extraApi'
   },
   plugins: 'gridfilters', // untuk filter
+  bbar: {
+    xtype: 'pagingtoolbar', // untuk pagination
+    displayInfo: true,
+  },
   columns : [
     // {text : 'No. Container', dataIndex : 'no_cont', flex : 1},
     // {text : 'Size', dataIndex : 'size', flex : 1},
